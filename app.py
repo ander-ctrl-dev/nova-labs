@@ -8,17 +8,20 @@ def home():
 def networking():
     return render_template("networking.html")
 
-@app.route("/homepage")
-def homepage():
-    return render_template("computer_home/homepage.html")
-
-@app.route("/computer-basics")
-def computer_basics():
-    return render_template("computer_home/homepage.html")
 
 @app.route("/start-learning")
 def start_learning():
     return render_template("start_learning.html")
+
+
+@app.route("/computer-basics")
+def homepage():
+    return render_template("computer_home/computer-basics.html")
+
+
+
+
+
 @app.route("/physics")
 def physics():
     return render_template("physics/physics_home.html")
