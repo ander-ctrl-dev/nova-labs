@@ -45,3 +45,22 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/ander-ctrl-dev/nova-labs.git
+```
+
+## Local Setup
+
+Install Flask:
+```bash
+pip install Flask
+```
+
+Run the application:
+```bash
+python app.py
+```
+Visit:
+``` text
+http:127.0.0.1:5000
+```
+
+
