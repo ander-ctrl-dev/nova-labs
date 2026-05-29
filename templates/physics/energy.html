@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/base.css') }}">
+</head>
+<a href="/" class="back-home">← Back to Home</a>
+
+<section class="energy-hero">
+
+    <div class="energy-intro">
+
+        <div class="title-glow"></div>
+
+        <h1 class="energy-title">Energy</h1>
+
+        <p>
+Everything in the universe moves, changes, and exists because of energy.
+Energy is the ability to make things happen. It can move objects,
+create heat, produce light, and power electronics.
+
+
+Energy cannot be destroyed — only transferred or transformed.
+A moving baseball contains kinetic energy. A battery stores chemical energy.
+Stars release enormous amounts of light and heat energy into space.
+Even the human brain runs using tiny electrical signals powered by energy.
+        </p>
+
+    </div>
+
+    <div class="stars"></div>
+    <div class="nebula"></div>
+
+    <div class="energy-particles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+</section>
+
+
+<section class="energy-transfer-section">
+
+    <div class="energy-text">
+
+        <h2>Energy Causes Change</h2>
+
+        <p>
+    When energy moves from one place to another, it creates change.
+    It can push objects, change temperatures, create light, and produce sound.
+
+    In the simulation, energy travels through the connection and transfers
+    motion into the object on the right.
+
+    This same idea exists everywhere in physics — from moving baseballs,
+    to lightning, to the billions of electrical signals moving through
+    computers every second.
+
+        </p>
+
+        <button onclick="sendEnergy()" class="energy-btn">
+            Send Energy
+        </button>
+
+    </div>
+
+    <div class="energy-demo">
+        
+        <div class="energy-source"></div>
+
+        <div class="energy-line">
+            <div class="energy-pulse" id="pulse"></div>      
+        </div>
+
+        <div class="energy-ball" id="energyBall"></div>
+    </div>
+</section>
+
+<section class="matter-section">
+
+    <h2>Energy Through Matter</h2>
+
+    <p>
+When matter gains energy, its particles begin moving faster.
+Those particles collide with nearby particles, transferring energy
+through the material like a chain reaction.
+
+This is how heat travels through metal, how sound moves through air,
+and how electrical energy flows through conductive materials like copper.
+At the microscopic level, energy transfer is constantly happening through
+motion, vibration, and electromagnetic interactions between particles.
+</p>
+
+
+    <div class="particle-chain">
+
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+
+    </div>
+
+    <button class="energy-button" onclick="sendMatterEnergy()">
+        Transfer Energy
+    </button>
+
+</section>
+<section class="space-energy-section">
+<div class="left-content">
+    <h2>Energy Through Empty Space</h2>
+
+    <p>
+        Not all energy needs matter to travel.
+
+        Light, radio waves, X-rays, and Wi-Fi signals move through space
+        using electromagnetic waves. These waves can travel through the
+        vacuum of space without particles colliding together.
+
+        This is how sunlight reaches Earth, and how wireless devices
+        communicate through the air.
+    </p>
+</div>
+    <div class="space-wave-demo">
+
+    <div class="space-wave-source"></div>
+
+    <div class="space-wave-line">
+        <div class="space-wave-pulse"></div>
+    </div>
+
+    <div class="space-wave-target"></div>
+
+</div>
+
+    <button class="energy-button" onclick="sendWave()">
+        Send Wave
+    </button>
+
+</section>
+<div class="light-content">
+    <h2>Light and Electromagnetic Waves</h2>
+
+    <p>
+        Radio waves, microwaves, infrared light, visible light, ultraviolet light,
+        X-rays, and gamma rays are all forms of electromagnetic energy.
+
+        The only major difference is wavelength and frequency.
+
+        Wi-Fi, Bluetooth, and cell signals use lower-frequency radio waves to
+        send information wirelessly. Visible light uses much higher frequencies,
+        allowing human eyes to detect it as color.
+
+        Even though they behave differently, they are all part of the same
+        electromagnetic spectrum.
+    </p>
+<div class="spectrum-container">
+
+<div class="wave-label">
+    <span>Radio</span>
+    <div class="frequency-wave radio-wave"></div>
+</div>
+
+<div class="wave-label">
+    <span>Microwave</span>
+    <div class="frequency-wave microwave-wave"></div>
+</div>
+
+<div class="wave-label">
+    <span>Infrared</span>
+    <div class="frequency-wave infrared-wave"></div>
+</div>
+
+<div class="wave-label">
+    <span>Visible Light</span>
+    <div class="frequency-wave visible-wave"></div>
+</div>
+
+<div class="wave-label">
+    <span>Ultraviolet</span>
+    <div class="frequency-wave uv-wave"></div>
+</div>
+
+<div class="wave-label">
+    <span>X-Rays</span>
+    <div class="frequency-wave xray-wave"></div>
+</div>
+
+<div class="wave-label">
+    <span>Gamma Rays</span>
+    <div class="frequency-wave gamma-wave"></div>
+</div>
+
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>

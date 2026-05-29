@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/base.css') }}">
+</head>
+<a href="/" class="back-home">← Back to Home</a>
+
+<section class="atom-hero">
+    <div class="floating-particles"></div>
+
+
+    <div class="atom-content">
+        <h1>Atoms</h1>
+        <p>
+        Tiny charged particles form
+        everything in the known universe.
+        </p>
+
+    <button>Build an Atom</button>
+    </div>
+
+    <div class="atom-visual">
+
+        <div class="nucleus"></div>
+
+        <div class="orbit orbit-1">
+            <div class="electron"></div>
+        </div>
+
+        <div class="orbit orbit-2">
+            <div class="electron"></div>
+        </div>
+
+        <div class="orbit orbit-3">
+            <div class="electron"></div>
+        </div>
+
+    </div>
+
+</section>
+
+
+    <div class="atom-info-text">
+
+        <h2>What Is An Atom?</h2>
+
+        <p>
+            Atoms are the tiny building blocks
+            that make up everything around us.
+        </p>
+
+        <p>
+            Every object, person, planet,
+            and star is made from atoms.
+        </p>
+
+        <p>
+            At the center is a nucleus,
+            surrounded by fast-moving electrons.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="atom-breakdown">
+
+    <div class="breakdown-left">
+
+        <h2>Inside an Atom</h2>
+
+        <p>
+            Atoms are made of smaller particles that each play a different role.
+            Together, they create everything in the universe.
+        </p>
+
+<div class="info-card nucleus-card">
+    <h3>Nucleus</h3>
+    <p>
+        The dense center of the atom containing protons and neutrons.
+    </p>
+</div>
+
+        <div class="particle-info">
+            <div class="info-card proton-card">
+                <h3>Protons</h3>
+                <p>Positive particles inside the nucleus.</p>
+            </div>
+
+            <div class="info-card neutron-card">
+                <h3>Neutrons</h3>
+                <p>Neutral particles that stabilize the atom.</p>
+            </div>
+
+            <div class="info-card electron-card">
+                <h3>Electrons</h3>
+                <p>Fast-moving negative particles orbiting the nucleus.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="breakdown-right">
+
+        <div class="atom-demo">
+
+            <div class="demo-nucleus">
+                
+                <div class="nucleus-core"></div>
+
+                <div class="nucleus-proton"></div>
+                <div class="nucleus-proton proton-2"></div>
+
+                <div class="nucleus-neutron"></div>
+                <div class="nucleus-neutron neutron-2"></div>
+</div>
+
+<div class="demo-orbit demo-orbit-a">
+    <div class="electron-wrapper electron-wrapper-a">
+        <div class="demo-electron"></div>
+    </div>
+</div>
+
+<div class="demo-orbit demo-orbit-b">
+    <div class="electron-wrapper electron-wrapper-b">
+        <div class="demo-electron"></div>
+    </div>
+</div>
+
+<div class="demo-orbit demo-orbit-c">
+    <div class="electron-wrapper electron-wrapper-c">
+        <div class="demo-electron"></div>
+    </div>
+</div>
+
+
+    </div>
+
+</section>
+
+
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
