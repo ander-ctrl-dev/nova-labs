@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 app = Flask(__name__)
 
+# BEGINNING SHIT -----------------------------------------------------------------------
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -8,15 +9,17 @@ def home():
 def start_learning():
     return render_template("start_learning.html")
 
+# PYTHON SHIT -----------------------------------------------------------------------
 @app.route("/python-home")
 def python_home():
     return render_template("/python/python-home.html")
 
+# NETWORKING SHIT -----------------------------------------------------------------------
 @app.route("/networking")
 def networking():
     return render_template("networking.html")
 
-
+# COMPUTER BASICS SHIT -----------------------------------------------------------------------
 @app.route("/computer-basics")
 def homepage():
     return render_template("computer_home/computer-basics.html")
@@ -25,8 +28,7 @@ def binary():
     return render_template("computer_home/binary.html")
 
 
-
-
+# PHYSICS SHIT -----------------------------------------------------------------------
 @app.route("/physics")
 def physics():
     return render_template("physics/physics_home.html")
