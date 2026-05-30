@@ -4,20 +4,25 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return render_template("index.html")
+@app.route("/start-learning")
+def start_learning():
+    return render_template("start_learning.html")
+
+@app.route("/python-home")
+def python_home():
+    return render_template("/python/python-home.html")
+
 @app.route("/networking")
 def networking():
     return render_template("networking.html")
 
 
-@app.route("/start-learning")
-def start_learning():
-    return render_template("start_learning.html")
-
-
 @app.route("/computer-basics")
 def homepage():
     return render_template("computer_home/computer-basics.html")
-
+@app.route("/binary")
+def binary():
+    return render_template("computer_home/binary.html")
 
 
 

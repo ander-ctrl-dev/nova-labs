@@ -282,10 +282,15 @@ const electrons = document.querySelectorAll(".demo-electron");
 const protons = document.querySelectorAll(".nucleus-proton");
 const neutrons = document.querySelectorAll(".nucleus-neutron");
 
+if (nucleus) {
+
 nucleus.addEventListener("click", () => {
     nucleus.classList.toggle("active");
     nucleusCard.classList.toggle("active");
 });
+}
+
+if (protonCard) {
 protonCard.addEventListener("click", () => {
 
     resetHighlights();
@@ -297,8 +302,10 @@ protonCard.addEventListener("click", () => {
     proton.classList.add("proton-highlight");
 
 });
-
 });
+}
+
+if (neutronCard) {
 neutronCard.addEventListener("click", () => {
 
     resetHighlights();
@@ -310,8 +317,10 @@ neutronCard.addEventListener("click", () => {
     neutron.classList.add("neutron-highlight");
 
 });
-
 });
+}
+
+if (electronCard) {
 electronCard.addEventListener("click", () => {
 
     console.log("clicky");
@@ -327,4 +336,4 @@ electronCard.addEventListener("click", () => {
     });
 
 });
-
+}
