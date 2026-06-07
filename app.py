@@ -23,10 +23,18 @@ def networking():
 @app.route("/computer-basics")
 def homepage():
     return render_template("computer_home/computer-basics.html")
+@app.route("/what-is-comp")
+def comp():
+    return render_template("computer_home/what-is-comp.html")
 @app.route("/binary")
 def binary():
     return render_template("computer_home/binary.html")
-
+@app.route("/logic_gates")
+def logic():
+    return render_template("computer_home/logic_gates.html")
+@app.route("/cpu_memory")
+def cpu():
+    return render_template("computer_home/cpu_memory.html")
 
 # PHYSICS SHIT -----------------------------------------------------------------------
 @app.route("/physics")
