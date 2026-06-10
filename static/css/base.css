@@ -250,6 +250,39 @@ body {
 .input-content p {
     margin-bottom: 30px;
 }
+.input-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.input-buttons button {
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+
+    background: rgba(255,255,255,0.1);
+    color: white;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+.input-buttons button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(0,255,255,0.5);
+}
+#input-demo {
+    margin-top: 40px;
+    text-align: center;
+    min-height: 200px;
+}
+
+
+
 /* PHYSICS SECTION */
 .lesson-page {
     width: 80%;

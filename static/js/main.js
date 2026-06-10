@@ -1,121 +1,100 @@
-let and1 = 0;
-let and2 = 0;
+function showInputDemo(device) {
+    const demo = document.getElementById("input-demo");
 
-function updateAndGate() {
+    if (device === "keyboard") {
+        demo.innerHTML = `
+            <h3>Keyboard Input</h3>
 
-    const result = and1 && and2 ? 1 : 0;
 
-    andOutput.textContent = result;
 
-    if (result === 1) {
-        andOutput.classList.add("active");
-    } else {
-        andOutput.classList.remove("active");
-    }
-}
-const andBtn1 = document.getElementById("andInput1");
-const andBtn2 = document.getElementById("andInput2");
-const andOutput = document.getElementById("andOutput");
-if (andBtn1 && andBtn2 && andOutput) {
-
-    andBtn1.addEventListener("click", () => {
-
-        and1 = and1 ? 0 : 1;
-
-        andBtn1.textContent = and1;
-
-        andBtn1.classList.toggle("active");
-
-        updateAndGate();
-    });
-
-    andBtn2.addEventListener("click", () => {
-
-        and2 = and2 ? 0 : 1;
-
-        andBtn2.textContent = and2;
-
-        andBtn2.classList.toggle("active");
-
-        updateAndGate();
-    });
-}
-
-let or1 = 0;
-let or2 = 0;
-
-const orBtn1 = document.getElementById("orInput1");
-const orBtn2 = document.getElementById("orInput2");
-const orOutput = document.getElementById("orOutput");
-
-if (orBtn1 && orBtn2 && orOutput) {
-
-    function updateOrGate() {
-
-        const result = or1 || or2 ? 1 : 0;
-
-        orOutput.textContent = result;
-
-        if (result === 1) {
-            orOutput.classList.add("active");
-        } else {
-            orOutput.classList.remove("active");
-        }
+            <p id="keyboardResult">
+                Start typing...
+            </p>
+        `;
     }
 
-    orBtn1.addEventListener("click", () => {
+    if (device === "mouse") {
+        demo.innerHTML = `
+            <h3>Mouse Input</h3>
 
-        or1 = or1 ? 0 : 1;
+            <div id="mouseBox"
+                onclick="mouseClicked()"
+                style="
+                    width:300px;
+                    height:150px;
+                    border:2px solid white;
+                    margin:20px auto;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    cursor:pointer;
+                ">
+                Click Me
+            </div>
 
-        orBtn1.textContent = or1;
-
-        orBtn1.classList.toggle("active");
-
-        updateOrGate();
-    });
-
-    orBtn2.addEventListener("click", () => {
-
-        or2 = or2 ? 0 : 1;
-
-        orBtn2.textContent = or2;
-
-        orBtn2.classList.toggle("active");
-
-        updateOrGate();
-    });
-}
-
-let notValue = 0;
-
-const notBtn = document.getElementById("notInput");
-const notOutput = document.getElementById("notOutput");
-
-if (notBtn && notOutput) {
-
-    function updateNotGate() {
-
-        const result = notValue ? 0 : 1;
-
-        notOutput.textContent = result;
-
-        if (result === 1) {
-            notOutput.classList.add("active");
-        } else {
-            notOutput.classList.remove("active");
-        }
+            <p id="mouseResult">
+                Waiting for click...
+            </p>
+        `;
     }
 
-    notBtn.addEventListener("click", () => {
+    if (device === "microphone") {
+        demo.innerHTML = `
+            <h3>Microphone Input</h3>
 
-        notValue = notValue ? 0 : 1;
+            <button onclick="simulateMic()">
+                🎤 Speak
+            </button>
 
-        notBtn.textContent = notValue;
+            <p id="micResult">
+                Waiting for sound...
+            </p>
+        `;
+    }
 
-        notBtn.classList.toggle("active");
+    if (device === "camera") {
+        demo.innerHTML = `
+            <h3>Camera Input</h3>
 
-        updateNotGate();
-    });
+            <button onclick="simulateCamera()">
+                📷 Take Photo
+            </button>
+
+            <p id="cameraResult">
+                Waiting for image...
+            </p>
+        `;
+    }
+}
+function updateKeyboard() {
+    const text =
+        document.getElementById("keyboardInput").value;
+
+    document.getElementById("keyboardResult").innerText =
+        `Input received: "${text}"`;
+}
+
+function mouseClicked() {
+    document.getElementById("mouseResult").innerText =
+        "Mouse click detected!";
+}
+
+function simulateMic() {
+    document.getElementById("micResult").innerHTML =
+        `
+        Sound waves received<br>
+        ↓<br>
+        Converted into digital data
+        `;
+}
+
+function simulateCamera() {
+    document.getElementById("cameraResult").innerHTML =
+        `
+        Image captured<br>
+        ↓<br>
+        Converted into pixel data
+        `;
 }
 
 let powerOn = false;
