@@ -77,6 +77,16 @@
     <button onclick="showInputDemo('microphone')">🎤 Microphone</button>
     <button onclick="showInputDemo('camera')">📷 Camera</button>
 </div>
+<input
+    id="keyboardInput"
+    type="text"
+    oninput="updateKeyboard()"
+    placeholder="Type here..."
+>
+
+<p id="keyboardResult">
+    Start typing...
+</p>
 
 
 <div id="input-demo"></div>

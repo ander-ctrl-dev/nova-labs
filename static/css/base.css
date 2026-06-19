@@ -237,8 +237,8 @@ body {
     margin-bottom: 35px;
     text-align: center;
 }
-.lesson-demo h3 {
-    font-size: 2.5rem;
+h3 {
+    font-size: 2rem;
     margin-bottom: 25px;
     text-align: center;
 }
@@ -280,8 +280,9 @@ body {
     text-align: center;
     min-height: 200px;
 }
-
-
+.keyboard-result {
+    color:#031b2c
+}
 
 /* PHYSICS SECTION */
 .lesson-page {
@@ -1259,6 +1260,8 @@ body::after {
         transform: translateY(0);
     }
 }
+
+
 /* ATOM INFO SECTION */
 
 .atom-info-section {

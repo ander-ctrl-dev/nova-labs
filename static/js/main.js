@@ -2,15 +2,21 @@ function showInputDemo(device) {
     const demo = document.getElementById("input-demo");
 
     if (device === "keyboard") {
-        demo.innerHTML = `
-            <h3>Keyboard Input</h3>
+    demo.innerHTML = `
+    <h3>Keyboard Input</h3>
 
+    <input
+        id="keyboardInput"
+        type="text"
+        placeholder="Type here"
+        oninput="updateKeyboard()"
+    >
 
+    <p id="keyboardResult">
+        Start typing...
+    </p>
+`;
 
-            <p id="keyboardResult">
-                Start typing...
-            </p>
-        `;
     }
 
     if (device === "mouse") {
@@ -66,7 +72,7 @@ function showInputDemo(device) {
         `;
     }
 }
-function updateKeyboard() {
+function updateKeyboard() {                                                                                                                                                
     const text =
         document.getElementById("keyboardInput").value;
 
