@@ -144,6 +144,7 @@ body {
     width: 280px;
 
     padding: 2rem;
+    min-height: 220px;
 
     border-radius: 20px;
 
@@ -1174,7 +1175,7 @@ body::after {
     animation: nucleusPulse 4s ease-in-out infinite;
 }
 .orbit {
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
     top: 50%;
     left: 50%;
     position: absolute;
@@ -1191,7 +1192,7 @@ body::after {
 .orbit-1 {
     top: 50%;
     left: 50%;
-    translate: (-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 180px;
     height: 180px;
     animation-duration: 1s;}
