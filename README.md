@@ -2,6 +2,8 @@
 
 An interactive computer science learning platform built with Flask. Being built by a self-taught developer who believes education should be accessible, visual, and free.
 
+![Nova Labs Home](screenshots/home.png)
+
 ## Goal
 
 Nova Labs is designed to make technical concepts approachable for beginners through interactive lessons, visual explanations, and hands-on exploration.
