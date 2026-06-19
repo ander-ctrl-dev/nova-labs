@@ -1369,11 +1369,6 @@ body::after {
     justify-content: center;
     align-items: center;
 }
-.atom-demo {
-    width: 400px;
-    height: 400px;
-    position: relative;
-}
 .nucleus-card.active {
     border: 1px solid rgba(255, 120, 180, 0.8);
 
@@ -1385,22 +1380,23 @@ body::after {
 }
 @keyframes spin {
     from {
-        transform: translate(-50%, -50%) rotate(0deg);
+        transform: rotate(0deg);
     }
 
     to {
-        transform: translate(-50%, -50%) rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 @keyframes spinReverse {
     from {
-        transform: translate(-50%, -50%) rotate(360deg);
+        transform: rotate(360deg);
     }
 
     to {
-        transform: translate(-50%, -50%) rotate(0deg);
+        transform: rotate(0deg);
     }
 }
+
 .atom-breakdown::before {
     content: "";
 
@@ -1600,65 +1596,24 @@ body::after {
     z-index: 1;
     animation: nucleusPulse 4s ease-in-out infinite;
 }
-.demo-orbit-a {
-    transform: translate(-50%, -50%) rotate(20deg);
-}
-.demo-orbit-b {
-    transform: translate(-50%, -50%) rotate(-40deg);
-}
-.demo-orbit-c {
-    transform: translate(-50%, -50%) rotate(75deg);
-}
-.demo-orbit {
-    position: absolute;
 
+.atom-demo {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+/* .demo-orbit {
+    position: absolute;
     top: 50%;
     left: 50%;
 
     width: 260px;
     height: 260px;
 
-    border-radius: 50%;
-    border: 2px solid rgba(255,255,255,0.7);
-}
-.electron-wrapper {
-    position: absolute;
-    width: inherit;
-    height: inherit;
-
-    top: 0;
-    left: 0;
-
-    transform-origin: center center;
-
-    animation: spin 7s linear infinite;
-}
-.electron-wrapper-a {
-    animation-duration: 6s;
-}
-.electron-wrapper-b {
-    animation-duration: 8s;
-}
-.electron-wrapper-c {
-    animation-duration: 10s;
-}
-.demo-electron {
-    position: absolute;
-
-    width: 18px;
-    height: 18px;
-
+    border: 2px solid cyan;
     border-radius: 50%;
 
-    top: 50%;
-    right: -9px;
-
-    transform: translateY(-50%);
-
-    background: radial-gradient(circle,
-        #fff6b0,
-        #ff4d6d);
-    box-shadow:
-        0 0 40px rgba(255, 77, 109, 0.9),
-        0 0 100px rgba(255, 77, 109, 0.4);
+    transform: translate(-50%, -50%);
 }
+*/
