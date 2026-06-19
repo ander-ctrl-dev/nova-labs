@@ -2,6 +2,10 @@
 
 An interactive computer science learning platform built with Flask. Being built by a self-taught developer who believes education should be accessible, visual, and free.
 
+## Screenshots
+
+### Home Page
+
 ![Nova Labs Home](screenshots/home.png)
 
 ## Goal
@@ -24,6 +28,10 @@ Topics include:
 - Accessible design principles
 - Responsive web interface
 - Flask-powered backend
+
+### Interactive Learning Lab
+![Energy Lab](screenshots/energy.png)
+
 
 ## Tech Stack
 
