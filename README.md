@@ -1,5 +1,5 @@
 # Nova Labs
-Live Site: https://nova-labs.onrender.com/
+Live Site: https://www.nova-labs.sh/
 
 An interactive computer science learning platform built with Flask. Being built by a self-taught developer who believes education should be accessible, visual, and free.
 
